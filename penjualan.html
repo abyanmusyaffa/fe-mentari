@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./src/style.css" rel="stylesheet">
+  <style>
+    .shadow-mentari::-webkit-scrollbar {
+        width: 0;
+      }
+  </style>
+</head>
+<body class="font-sans">
+  <div class="h-screen w-screen flex">
+    <div class="w-[240px] h-full py-10 px-6 flex flex-col gap-6 items-center">
+        <img src="./img/mentari.svg" width="140" alt="">
+
+        <div class="w-full flex flex-col gap-2">
+          <a href="">
+            <div class="w-full flex items-center gap-4 px-6 py-1 rounded-2xl text-slate-50 outline-2 outline outline-indigo-800 bg-indigo-800">
+              <span class="icon-[mdi--cart] text-xl"></span>
+              <p class="text-xl font-medium">Penjualan</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="w-full flex items-center gap-4 px-6 py-1 rounded-2xl text-indigo-800 outline-1 outline outline-indigo-800 hover:text-slate-50 hover:bg-indigo-800 transition-all">
+              <span class="icon-[mingcute--clipboard-fill] text-xl"></span>
+              <p class="text-xl font-medium">Pesanan</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full flex flex-col gap-2 h-full">
+          <a href="">
+            <div class="w-full flex items-center gap-4 ps-8 pe-6 py-1 text-slate-500 font-medium hover:font-semibold hover:text-indigo-800 transition-all">
+              <span class="icon-[fa--dashboard] w-4"></span>
+              <p class="leading-4 ">Dashboard</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="w-full flex items-center gap-4 ps-8 pe-6 py-1 text-slate-500 font-medium hover:font-semibold hover:text-indigo-800 transition-all">
+              <span class="icon-[fa-solid--layer-group] w-4"></span>
+              <p class="leading-4 ">Stok barang</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="w-full flex items-center gap-4 ps-8 pe-6 py-1 text-slate-500 font-medium hover:font-semibold hover:text-indigo-800 transition-all">
+              <span class="icon-[ph--list-checks-fill] w-4"></span>
+              <p class="leading-4 ">Transaksi</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="w-full flex items-center gap-4 ps-8 pe-6 py-1 text-slate-500 font-medium hover:font-semibold hover:text-indigo-800 transition-all">
+              <span class="icon-[fluent--people-list-16-filled] w-4"></span>
+              <p class="leading-4 ">Pelanggan</p>
+            </div>
+          </a>
+          <a href="">
+            <div class="w-full flex items-center gap-4 ps-8 pe-6 py-1 text-slate-500 font-medium hover:font-semibold hover:text-indigo-800 transition-all">
+              <span class="icon-[mingcute--settings-2-fill] w-4"></span>
+              <p class="leading-4 ">Administrator</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full flex">
+          <div class="h-32 w-full flex flex-col gap-2 justify-end rounded-2xl p-4 bg-gradient-to-t from-indigo-800 to-indigo-700 relative">
+            <div style="background-image: url(/img/pp.jpg);" class="size-16 border-4 border-indigo-700 rounded-[50%] bg-top bg-cover bg-no-repeat absolute self-center top-[-32px]">
+            </div>
+            <div class="w-full text-center text-xs leading-5 text-slate-50">
+              <p class="font-bold">Abyan Aufa Alif Musyaffa</p>
+              <p class="">Kasir</p>
+            </div>
+            <a href="">
+              <div class="w-full text-center rounded-lg px-8 text-slate-500 bg-slate-50 hover:text-indigo-800 transition-all">
+                <p class="text-base leading-6 font-medium">Logout</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        
+    </div>
+    <div style="width: calc(100vw - 240px);" class="h-full bg-slate-100 rounded-s-[40px] p-6 gap-6 flex">
+        <div class="w-7/12 h-full p-4 rounded-2xl bg-white flex flex-col justify-between">
+            <div class="w-full flex">
+              <p class="text-indigo-800 text-[28px] leading-7 font-medium w-full">Pilih barang</p>
+              <div class="relative">
+                <input type="text" class="w-56 py-1 px-10 rounded-2xl bg-indigo-100 text-slate-500 placeholder-slate-500 focus:border-none focus:outline-none" placeholder="Cari barang">
+                <span class="absolute left-4 top-2">
+                    <span class="icon-[mingcute--search-line] w-4 text-slate-500"></span>
+                </span>
+              </div>
+            </div>
+
+            <div style="height: calc(100% - 42px);" class="w-full flex gap-4">
+
+              <div class="w-32 flex flex-col h-full gap-2 py-4">
+                <a href="">
+                  <div class="w-full text-slate-50 bg-indigo-500 rounded-lg px-8 text-center">
+                    <p>Semua</p>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="w-full text-indigo-500 px-8 text-center rounded-lg hover:bg-indigo-500 hover:text-slate-50">
+                    <p>Semua</p>
+                  </div>
+                </a>
+              </div>
+
+              <div class="size-full flex flex-col gap-2 p-2 rounded-2xl bg-slate-50 shadow-mentari overflow-y-scroll">
+                
+                <div class="w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md hover:shadow-none hover:bg-indigo-500 hover:text-slate-50 group">
+                  <p class=" w-full">Buku Tulis SIDU</p>
+                  <div class="flex gap-4 items-center text-indigo-500 group-hover:text-slate-50">
+                    <span class="icon-[fluent--money-16-filled] text-xl"></span>
+                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                  </div>
+                </div>
+                
+                <div class="w-full flex text-slate-50 bg-indigo-500 py-1 px-2 rounded-lg">
+                  <p class=" w-full">Buku Tulis SIDU</p>
+                  <div class="flex gap-4 items-center">
+                    <span class="icon-[fluent--money-16-filled] text-xl"></span>
+                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+        </div>
+        <div class="w-5/12 h-full p-4 rounded-2xl bg-white flex flex-col gap-4">
+          <p class="text-indigo-800 text-[28px] leading-7 font-medium w-full">Keranjang</p>
+          <div class="size-full flex flex-col gap-2 p-3 rounded-2xl bg-slate-50 shadow-mentari">
+            <div class="w-full flex gap-4">
+              <div class="flex flex-col w-full">
+                <p class="leading-4 text-slate-800">Pensil 2B</p>
+                <p class="text-xs leading-3 text-slate-500">IDR 2.000</p>
+              </div>
+              <div class="flex min-w-20 justify-between">
+                <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold">-</button>
+                <p class="text-indigo-800 font-bold text-center w-full">4</p>
+                <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold">+</button>
+              </div>
+              <p class="font-bold text-slate-800 whitespace-nowrap">IDR 12.000</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-[2px] w-full">
+            <div class="flex items-center w-full">
+              <p class=" text-slate-600 w-full">Data pelanggan</p>
+              <button type="button" class="size-6 text-slate-50 bg-indigo-800 rounded items-center justify-center flex"><span class="icon-[fluent--people-list-16-filled] w-4"></span></button>
+            </div>
+            <div class="flex w-full">
+              <p class="text-slate-800 text-xl font-medium w-full">Nama</p>
+                
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
