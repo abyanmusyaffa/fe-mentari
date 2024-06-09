@@ -83,26 +83,26 @@
     <div style="width: calc(100vw - 240px);" class="h-full bg-slate-100 rounded-s-[40px] p-6 gap-6 flex">
         <div class="w-7/12 h-full p-4 rounded-2xl bg-white flex flex-col justify-between">
             <div class="w-full flex">
-              <p class="text-indigo-800 text-[28px] leading-7 font-medium w-full">Pilih barang</p>
+              <p class="text-indigo-800 text-2xl leading-6 font-medium w-full">Pilih barang</p>
               <div class="relative">
-                <input type="text" class="w-56 py-1 px-10 rounded-2xl bg-indigo-100 text-slate-500 placeholder-slate-500 focus:border-none focus:outline-none" placeholder="Cari barang">
-                <span class="absolute left-4 top-2">
+                <input type="text" class="w-56 px-10 rounded-2xl bg-indigo-100 text-slate-500 placeholder-slate-500 focus:border-none focus:outline-none" placeholder="Cari barang">
+                <span class="absolute left-4 top-1">
                     <span class="icon-[mingcute--search-line] w-4 text-slate-500"></span>
                 </span>
               </div>
             </div>
 
-            <div style="height: calc(100% - 42px);" class="w-full flex gap-4">
+            <div style="height: calc(100% - 36px);" class="w-full flex gap-4">
 
               <div class="w-32 flex flex-col h-full gap-2 py-4">
                 <a href="">
-                  <div class="w-full text-slate-50 bg-indigo-500 rounded-lg px-8 text-center">
+                  <div class="w-full text-slate-50 bg-indigo-500 rounded-lg text-center">
                     <p>Semua</p>
                   </div>
                 </a>
                 <a href="">
-                  <div class="w-full text-indigo-500 px-8 text-center rounded-lg hover:bg-indigo-500 hover:text-slate-50">
-                    <p>Semua</p>
+                  <div class="w-full text-indigo-500 text-center rounded-lg hover:bg-indigo-500 hover:text-slate-50">
+                    <p>Kertas HVS</p>
                   </div>
                 </a>
               </div>
@@ -118,18 +118,18 @@
                 </div>
                 
                 <div class="w-full flex text-slate-50 bg-indigo-500 py-1 px-2 rounded-lg">
-                  <p class=" w-full">Buku Tulis SIDU</p>
+                  <p class=" w-full">Pensil 2B</p>
                   <div class="flex gap-4 items-center">
                     <span class="icon-[fluent--money-16-filled] text-xl"></span>
-                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                    <p class="font-bold whitespace-nowrap">IDR 3.500</p>
                   </div>
                 </div>
                 
               </div>
             </div>
         </div>
-        <div class="w-5/12 h-full p-4 rounded-2xl bg-white flex flex-col gap-4">
-          <p class="text-indigo-800 text-[28px] leading-7 font-medium w-full">Keranjang</p>
+        <div class="w-5/12 h-full p-4 rounded-2xl bg-white flex flex-col gap-2">
+          <p class="text-indigo-800 text-2xl leading-6 font-medium w-full">Keranjang</p>
           <div class="size-full flex flex-col gap-2 p-3 rounded-2xl bg-slate-50 shadow-mentari">
             <div class="w-full flex gap-4">
               <div class="flex flex-col w-full">
@@ -144,15 +144,68 @@
               <p class="font-bold text-slate-800 whitespace-nowrap">IDR 12.000</p>
             </div>
           </div>
-          <div class="flex flex-col gap-[2px] w-full">
-            <div class="flex items-center w-full">
-              <p class=" text-slate-600 w-full">Data pelanggan</p>
-              <button type="button" class="size-6 text-slate-50 bg-indigo-800 rounded items-center justify-center flex"><span class="icon-[fluent--people-list-16-filled] w-4"></span></button>
+
+          <div class="w-full flex flex-col gap-2">
+            <div class="flex flex-col gap-[2px] w-full">
+              <div class="flex items-center w-full">
+                <p class=" text-slate-600 w-full leading-6">Data pelanggan</p>
+                <button type="button" class="size-6 text-slate-50 bg-indigo-800 rounded items-center justify-center flex"><span class="icon-[fluent--people-list-16-filled] w-4"></span></button>
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Nama</p>
+                <input type="text" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Nomor HP</p>
+                <input type="text" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Diskon (%)</p>
+                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+              </div>
             </div>
-            <div class="flex w-full">
-              <p class="text-slate-800 text-xl font-medium w-full">Nama</p>
-                
+
+            <div class="flex flex-col gap-[2px] w-full">
+              <div class="flex items-center w-full">
+                <p class=" text-slate-600 w-full leading-6">Pembayaran</p>
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Metode</p>
+                <div class="min-w-44 flex px-1">
+                  <div class="w-1/2 flex items-center gap-2">
+                    <input type="radio" name="metode" id="tunai" value="Tunai" class="">
+                    <label for="tunai" class="w-full text-indigo-800 font-semibold text-xs">Tunai</label>
+                  </div>
+                  <div class="w-1/2 flex items-center gap-2">
+                    <input type="radio" name="metode" id="nontunai" value="Non Tunai" class="">
+                    <label for="nontunai" class="w-full text-indigo-800 font-semibold text-xs whitespace-nowrap">Non Tunai</label>
+                  </div>
+                </div>
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Diterima</p>
+                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+              </div>
+              <div class="flex w-full">
+                <p class="text-slate-800 text-xl font-medium w-full leading-8">Kembali</p>
+                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+              </div>
             </div>
+          </div>
+
+          <div class="w-full rounded-lg bg-indigo-100 p-2">
+            <div class="w-full flex">
+              <p class="text-xl leading-8 font-semibold w-full">Diskon</p>
+              <p class="text-xl leading-8 font-semibold whitespace-nowrap">IDR 10.000</p>
+            </div>
+            <div class="w-full flex">
+              <p class="text-[32px] leading-8 font-semibold w-full">Total</p>
+              <p class="text-[40px] leading-10 font-bold whitespace-nowrap">IDR 10.000</p>
+            </div>
+          </div>
+          <div class="w-full flex gap-2">
+            <button type="submit" class="w-7/12 p-2 leading-4 font-semibold rounded-lg bg-indigo-500 text-slate-50">Bayar</button>
+            <button type="submit" class="w-5/12 p-2 leading-4 font-semibold rounded-lg bg-indigo-800 text-slate-50">Pending</button>
           </div>
         </div>
     </div>
