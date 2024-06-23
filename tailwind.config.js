@@ -12,6 +12,7 @@ module.exports = {
       },
       boxShadow: {
         mentari: "4px 4px 10px rgba(228, 230, 232, 0.90) inset",
+        mentari2: "5px 5px 13px rgba(235, 235, 235, 0.90)",
       },
     },
   },

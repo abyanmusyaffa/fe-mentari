@@ -6,7 +6,7 @@
   <link href="./src/style.css" rel="stylesheet">
   <title>Mentari | Penjualan</title>
   <style>
-    .shadow-mentari::-webkit-scrollbar {
+    .shadow-mentari::-webkit-scrollbar, .pelanggan::-webkit-scrollbar {
         width: 0;
       }
   </style>
@@ -96,25 +96,21 @@
             <div style="height: calc(100% - 36px);" class="w-full flex gap-4">
 
               <div class="min-w-32 flex flex-col h-full gap-2 py-4">
-                <button type="button" id="tab1" class="tab-btn">
-                  <div class="w-full text-slate-50 bg-indigo-500 rounded text-center">
-                    <p>Semua</p>
-                  </div>
+                <button type="button" id="tab0" class="tab-btn w-full text-slate-50 bg-indigo-500 rounded text-center">
+                  Semua
                 </button>
-                <button type="button" id="tab2" class="tab-btn">
-                  <div class="w-full text-indigo-500 text-center rounded hover:bg-indigo-500 hover:text-slate-50">
-                    <p>Kertas HVS</p>
-                  </div>
+                <button type="button" id="tab1" class="tab-btn w-full text-slate-50 bg-indigo-500 rounded text-center">
+                  Buku
                 </button>
               </div>
 
-              <div id="tab-content1" class="tab-content size-full flex flex-col gap-2 p-2 rounded-2xl bg-slate-50 shadow-mentari overflow-y-scroll">
+              <div id="tab-content0" class="tab-content size-full flex flex-col gap-2 p-2 rounded-2xl bg-slate-50 shadow-mentari overflow-y-scroll">
 
                 <label for="barang" class="cursor-pointer w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md has-[:checked]:text-slate-50 has-[:checked]:bg-indigo-500 group transition-all">
                   <p class="w-full">Buku Tulis SIDU</p>
                   <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
                     <span class="icon-[fluent--money-16-filled] text-xl"></span>
-                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
                   </div>
                   <input hidden class="peer" type="checkbox" name="" id="barang">
                 </label>
@@ -123,20 +119,44 @@
                   <p class="w-full">Buku Tulis SIDU</p>
                   <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
                     <span class="icon-[fluent--money-16-filled] text-xl"></span>
-                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
                   </div>
                   <input hidden class="peer" type="checkbox" name="" id="barang1">
                 </label>
                 
               </div>
 
-              <div id="tab-content2" class="tab-content hidden size-full flex flex-col gap-2 p-2 rounded-2xl bg-slate-50 shadow-mentari overflow-y-scroll">
+              <div id="tab-content1" class="tab-content hidden size-full flex flex-col gap-2 p-2 rounded-2xl bg-slate-50 shadow-mentari overflow-y-scroll">
 
                 <label for="barang" class="cursor-pointer w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md has-[:checked]:text-slate-50 has-[:checked]:bg-indigo-500 group transition-all">
                   <p class="w-full">Buku Tulis SIDU</p>
                   <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
                     <span class="icon-[fluent--money-16-filled] text-xl"></span>
-                    <p class="font-bold whitespace-nowrap">IDR 6.000</p>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
+                  </div>
+                  <input hidden class="peer" type="checkbox" name="" id="barang">
+                </label>
+                <label for="barang" class="cursor-pointer w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md has-[:checked]:text-slate-50 has-[:checked]:bg-indigo-500 group transition-all">
+                  <p class="w-full">Buku Tulis SIDU</p>
+                  <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
+                    <span class="icon-[fluent--money-16-filled] text-xl"></span>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
+                  </div>
+                  <input hidden class="peer" type="checkbox" name="" id="barang">
+                </label>
+                <label for="barang" class="cursor-pointer w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md has-[:checked]:text-slate-50 has-[:checked]:bg-indigo-500 group transition-all">
+                  <p class="w-full">Buku Tulis SIDU</p>
+                  <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
+                    <span class="icon-[fluent--money-16-filled] text-xl"></span>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
+                  </div>
+                  <input hidden class="peer" type="checkbox" name="" id="barang">
+                </label>
+                <label for="barang" class="cursor-pointer w-full flex text-slate-800 bg-white py-1 px-2 rounded-lg shadow-md has-[:checked]:text-slate-50 has-[:checked]:bg-indigo-500 group transition-all">
+                  <p class="w-full">Buku Tulis SIDU</p>
+                  <div class="flex gap-4 items-center text-indigo-500 group-has-[:checked]:text-slate-50 transition-all">
+                    <span class="icon-[fluent--money-16-filled] text-xl"></span>
+                    <p class="font-bold whitespace-nowrap">Rp 6.000</p>
                   </div>
                   <input hidden class="peer" type="checkbox" name="" id="barang">
                 </label>
@@ -144,20 +164,23 @@
               </div>
             </div>
         </div>
-        <div class="w-5/12 h-full p-4 rounded-2xl bg-white flex flex-col gap-2">
+        <form action="/penjualan" method="post" class="w-5/12 h-full p-4 rounded-2xl bg-white flex flex-col gap-2">
           <p class="text-indigo-800 text-2xl leading-6 font-medium w-full">Keranjang</p>
-          <div class="size-full flex flex-col gap-2 p-3 rounded-2xl bg-slate-50 shadow-mentari">
-            <div class="w-full flex gap-4">
+          <div id="keranjang-items" class="size-full overflow-y-scroll flex flex-col gap-2 p-3 rounded-2xl bg-slate-50 shadow-mentari">
+            <div class="w-full flex gap-4 cart-item" data-id="${id}" data-price="${price}" data-stock="${stock}">
+              <input type="text" name="id[]" hidden value="${id}">
+              <input type="number" name="jumlah[]" class="quantity" hidden value="1">
+              <input type="number" name="total_harga[]" class="item-total-price" hidden value="${price}">
               <div class="flex flex-col w-full">
-                <p class="leading-4 text-slate-800">Pensil 2B</p>
-                <p class="text-xs leading-3 text-slate-500">IDR 2.000</p>
+                  <p class="leading-4 text-slate-800">Pensil 2B</p>
+                  <p class="text-xs leading-3 text-slate-500">Rp 4.000</p>
               </div>
               <div class="flex min-w-20 justify-between">
-                <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold">-</button>
-                <p class="text-indigo-800 font-bold text-center w-full">4</p>
-                <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold">+</button>
+                  <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold decrease-qty">-</button>
+                  <p class="text-indigo-800 font-bold text-center w-full quantity">1</p>
+                  <button type="button" class="h-6 min-w-6 text-indigo-800 bg-indigo-100 rounded-lg font-semibold increase-qty">+</button>
               </div>
-              <p class="font-bold text-slate-800 whitespace-nowrap">IDR 12.000</p>
+              <p class="font-bold text-slate-800 whitespace-nowrap min-w-24 text-end item-total-price">Rp 4.000</p>
             </div>
           </div>
 
@@ -165,19 +188,23 @@
             <div class="flex flex-col gap-[2px] w-full">
               <div class="flex items-center w-full">
                 <p class=" text-slate-600 w-full leading-6">Data pelanggan</p>
-                <button type="button" class="size-6 text-slate-50 bg-indigo-800 rounded items-center justify-center flex"><span class="icon-[fluent--people-list-16-filled] w-4"></span></button>
+                <button type="button" id="modal-btn" class="size-6 text-slate-50 bg-indigo-800 rounded items-center justify-center flex"><span class="icon-[fluent--people-list-16-filled] w-4"></span></button>
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Nama</p>
-                <input type="text" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Nama</p>
+                <input type="text" name="nama" id="nama-pelanggan" class="h-7 text-indigo-800 leading-4 px-2 bg-indigo-100 w-1/2 rounded focus:border-none focus:outline-none">
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Nomor HP</p>
-                <input type="text" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Nomor HP</p>
+                <input type="text" name="hp" id="hp-pelanggan" class="h-7 text-indigo-800 leading-4 px-2 bg-indigo-100 w-1/2 rounded focus:border-none focus:outline-none">
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Diskon (%)</p>
-                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Diskon (%)</p>
+                <input type="number" name="diskon" id="discount" class="h-7 text-indigo-800 leading-4 px-2 bg-indigo-100 w-1/2 rounded focus:border-none focus:outline-none">
+              </div>
+              <div class="flex w-full gap-1 justify-end items-center simpan-pelanggan">
+                <label for="simpan-pelanggan" class="text-slate-800">Simpan data pelanggan</label>
+                <input type="checkbox" name="simpan_pelanggan" id="simpan-pelanggan" class="h-4 rounded focus:border-none focus:outline-none">
               </div>
             </div>
 
@@ -186,25 +213,25 @@
                 <p class=" text-slate-600 w-full leading-6">Pembayaran</p>
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Metode</p>
-                <div class="min-w-44 flex px-1">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Metode</p>
+                <div class="w-1/2 flex px-1">
                   <div class="w-1/2 flex items-center gap-2">
-                    <input type="radio" name="metode" id="tunai" value="Tunai" class="">
-                    <label for="tunai" class="w-full text-indigo-800 font-semibold text-xs">Tunai</label>
+                    <input type="radio" name="metode" id="tunai" value="Tunai" checked>
+                    <label for="tunai" class="w-full text-indigo-800 font-semibold">Tunai</label>
                   </div>
                   <div class="w-1/2 flex items-center gap-2">
-                    <input type="radio" name="metode" id="nontunai" value="Non Tunai" class="">
-                    <label for="nontunai" class="w-full text-indigo-800 font-semibold text-xs whitespace-nowrap">Non Tunai</label>
+                    <input type="radio" name="metode" id="nontunai" value="Non Tunai">
+                    <label for="nontunai" class="w-full text-indigo-800 font-semibold whitespace-nowrap">Non Tunai</label>
                   </div>
                 </div>
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Diterima</p>
-                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Diterima</p>
+                <input type="number" name="diterima" id="amountReceived" step="500" class="h-7 text-indigo-800 leading-4 px-2 bg-indigo-100 w-1/2  rounded focus:border-none focus:outline-none">
               </div>
               <div class="flex w-full">
-                <p class="text-slate-800 text-xl font-medium w-full leading-8">Kembali</p>
-                <input type="number" name="" id="" class="h-6 text-indigo-800 leading-4 px-2 bg-indigo-100 w-44 rounded focus:border-none focus:outline-none">
+                <p class="text-slate-800 text-xl font-medium w-1/2 leading-8">Kembali</p>
+                <input readonly type="number" name="kembali" id="changeAmount" class="h-7 text-indigo-800 leading-4 px-2 bg-indigo-100 w-1/2 rounded focus:border-none focus:outline-none">
               </div>
             </div>
           </div>
@@ -212,38 +239,227 @@
           <div class="w-full rounded-lg bg-indigo-100 p-2">
             <div class="w-full flex">
               <p class="text-xl leading-8 font-semibold w-full">Diskon</p>
-              <p class="text-xl leading-8 font-semibold whitespace-nowrap">IDR 10.000</p>
+              <input type="text" hidden name="total_diskon" class="total-discount">
+              <p class="total-discount text-xl leading-8 font-semibold whitespace-nowrap">Rp 1.000</p>
             </div>
             <div class="w-full flex">
               <p class="text-[32px] leading-8 font-semibold w-full">Total</p>
-              <p class="text-[40px] leading-10 font-bold whitespace-nowrap">IDR 10.000</p>
+              <input type="text" hidden name="grand_total" class="grand-total">
+              <p class="grand-total text-[40px] leading-10 font-bold whitespace-nowrap">Rp 4.000</p>
             </div>
           </div>
           <div class="w-full flex gap-2">
-            <button type="submit" class="w-7/12 p-2 leading-4 font-semibold rounded-lg bg-indigo-500 text-slate-50">Bayar</button>
-            <button type="submit" class="w-5/12 p-2 leading-4 font-semibold rounded-lg bg-indigo-800 text-slate-50">Pending</button>
+            <button id="modal-pending-button" type="button" value="pending" name="submit" class="w-6/12 p-2 leading-4 font-semibold rounded-lg bg-red-600 text-slate-50">Pending</button>
+            <button id="modal-bayar-button" type="button" value="bayar" name="submit" class="w-6/12 p-2 leading-4 font-semibold rounded-lg bg-yellow-600 text-slate-50">Bayar</button>
           </div>
-        </div>
+        </form>
     </div>
   </div>
 
+  <!-- Modal pending -->
+  <div id="modal-pending" class="hidden fixed inset-0 bg-indigo-500 bg-opacity-5 flex items-center justify-center">
+    <div class="size-[360px] flex flex-col rounded-2xl bg-white p-4 gap-4">
+      <div class="w-full gap-1">
+        <p class="text-red-600 font-medium text-center text-2xl leading-6">Pembayaran dipending</p>
+        <p class="text-red-600 text-center text-[10px] leading-3">Anda dapat merubah status pembayaran dihalaman Transaksi</p>
+      </div>
+      <div class="size-full flex justify-center items-center">
+        <span class="icon-[mingcute--warning-line] size-32 text-red-600"></span>
+      </div>
+      <div class="w-full flex gap-8 justify-center">
+        <button id="modal-pending-close" class="w-[106px] bg-red-600 rounded p-2 text-slate-50 leading-4 font-semibold text-center">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal bayar -->
+  <div id="modal-bayar" class="hidden fixed inset-0 bg-indigo-500 bg-opacity-5 flex items-center justify-center">
+    <div class="size-[360px] flex flex-col rounded-2xl bg-white p-4 gap-4">
+      <div class="w-full">
+        <p class="text-yellow-600 font-medium text-center text-2xl leading-10">Pembayaran berhasil</p>
+      </div>
+      <div class="size-full flex justify-center items-center">
+        <span class="icon-[ph--check-circle-bold] size-32 text-yellow-600"></span>
+      </div>
+      <div class="w-full flex gap-8 justify-center">
+        <button class="w-[106px] bg-sky-600 rounded p-2 text-slate-50 leading-4 font-semibold text-center">
+          Cetak
+        </button>
+        <button id="modal-bayar-close" class="w-[106px] bg-red-600 rounded p-2 text-slate-50 leading-4 font-semibold text-center">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal data pelanggan -->
+  <div id="modal-content" class="hidden fixed inset-0 bg-indigo-500 bg-opacity-5 flex items-center justify-center">
+    <div class="size-[480px] flex flex-col rounded-2xl bg-white p-4 gap-4">
+      <div class="w-full flex">
+        <p class="text-indigo-800 text-2xl leading-6 font-medium w-full">Pilih pelanggan</p>
+        <div class="relative">
+          <input id="search-pelanggan" type="text" class="w-44 ps-10 pe-4 py-1 rounded-2xl leading-5 bg-indigo-100 text-slate-500 placeholder-slate-500 focus:border-none focus:outline-none" placeholder="Cari pelanggan">
+          <div class="absolute left-4 top-[6px]">
+              <span  class="icon-[mingcute--search-line] w-4 text-slate-500"></span>
+          </div>
+        </div>
+      </div>
+      <div class="pelanggan size-full flex flex-col gap-1 bg-slate-50 rounded-2xl p-2 overflow-y-scroll">
+        <label for="pelanggan{{ $p->id }}" class="pelanggan-item w-full h-10 bg-white py-1 px-2 flex gap-4 items-center rounded-lg">
+          <input type="radio" name="pelanggan[]" id="pelanggan{{ $p->id }}" class="pelanggan-radio" data-id="{{ $p->id }}" data-name="{{ $p->nama }}" data-hp="{{ $p->hp}}" data-discount="{{ $p->diskon }}">
+          <div class="w-full">
+            <p class="nama-pelanggan leading-4 font-medium text-indigo-800">Cahyo Edi Saputra</p>
+            <p class="instansi-hp text-xs leading-3 text-slate-600">081234211234</p>
+          </div>
+          <p class="text-slate-400  text-xs font-medium whitespace-nowrap">#P-22234875</p>
+        </label>
+      </div>
+      <div class="w-full flex justify-end gap-2">
+        <button type="button" id="modal-btn-close" class=" w-32 p-2 leading-4 font-semibold rounded-lg bg-slate-200 text-slate-50" disabled>Pilih</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
   <script>
-    // JavaScript untuk menangani interaksi tabs
-    const tabs = document.querySelectorAll('.tab-btn');
-    const tabContents = document.querySelectorAll('.tab-content');
-  
-    tabs.forEach(tab => {
-      tab.addEventListener('click', () => {
-        // Menghapus kelas 'hidden' dari semua tab content
-        tabContents.forEach(content => {
-          content.classList.add('hidden');
+    $(document).ready(function () {
+        const $tabs = $('.tab-btn');
+        const $tabContents = $('.tab-content');
+
+        $tabs.on('click', function () {
+            const $tab = $(this);
+
+            $tabContents.addClass('hidden');
+
+            // Menghapus kelas aktif dari semua tab buttons
+            $tabs.removeClass('bg-indigo-500 text-slate-50')
+                 .addClass('text-indigo-500 hover:bg-indigo-500 hover:text-slate-50');
+
+            // Menampilkan tab content yang sesuai
+            const tabId = $tab.attr('id').replace('tab', 'tab-content');
+            $(`#${tabId}`).removeClass('hidden');
+
+            // Menambahkan kelas aktif pada tab button yang diklik
+            $tab.removeClass('text-indigo-500 hover:bg-indigo-500 hover:text-slate-50')
+                .addClass('bg-indigo-500 text-slate-50');
         });
-  
-        // Menghapus kelas 'hidden' dari tab content yang sesuai
-        const tabId = tab.id.replace('tab', 'tab-content');
-        document.getElementById(tabId).classList.remove('hidden');
-      });
+
+        // Menampilkan tab pertama secara default
+        $('#tab0').trigger('click');
     });
   </script>
+
+  <script>
+    $(document).ready(function () {
+        const $modal = $("#modal-content");
+        const $btn = $("#modal-btn");
+        const $btnClose = $("#modal-btn-close");
+    
+        function togglePilihButton() {
+            const anyChecked = $('input[name="pelanggan[]"]:checked').length > 0;
+            if (anyChecked) {
+                $btnClose.prop('disabled', false).removeClass('bg-slate-200').addClass('bg-green-600');
+            } else {
+                $btnClose.prop('disabled', true).removeClass('bg-green-600').addClass('bg-slate-200');
+            }
+        }
+    
+        $('#search-pelanggan').on('input', function() {
+            const query = $(this).val().trim().toLowerCase();
+            let hasResults = false;
+    
+            if (query.length > 0) {
+                $('.pelanggan-item').each(function() {
+                    const itemName = $(this).find('.nama-pelanggan').text().toLowerCase();
+                    const itemInstansiHp = $(this).find('.instansi-hp').text().toLowerCase();
+                    const itemId = $(this).find('p:last').text().toLowerCase();
+    
+                    if (itemName.includes(query) || itemInstansiHp.includes(query) || itemId.includes(query)) {
+                        $(this).show();
+                        hasResults = true;
+                    } else {
+                        $(this).hide();
+                    }
+                });
+            } else {
+                $('.pelanggan-item').show();
+                hasResults = true;
+            }
+    
+            if (!hasResults) {
+                if ($('#no-results').length === 0) {
+                    const notFoundMessage = $('<p>', {
+                        id: 'no-results',
+                        class: 'text-center text-xs text-slate-500',
+                        text: 'Pelanggan tidak ditemukan'
+                    });
+                    $('.pelanggan').append(notFoundMessage);
+                }
+            } else {
+                $('#no-results').remove();
+            }
+        });
+    
+        $('input[name="pelanggan[]"]').on('change', function() {
+            togglePilihButton();
+        });
+    
+        $btn.on('click', function() {
+            $modal.removeClass('hidden');
+        });
+
+        $btnClose.on('click', function() {
+        const selectedPelanggan = $('input[name="pelanggan[]"]:checked');
+            // const name = selectedPelanggan.data('name');
+            // const hp = selectedPelanggan.data('hp');
+            // const discount = selectedPelanggan.data('discount');
+
+            // $('#nama-pelanggan').val(name);
+            // $('#hp-pelanggan').val(hp);
+            // $('#discount').val(discount);
+
+            $modal.addClass('hidden');
+
+            // calculateDiscount();
+        });
+    
+        $modal.on('click', function(event) {
+            if (event.target === $modal[0]) {
+                $modal.addClass('hidden');
+            }
+        });
+
+        $('#modal-pending-button').on('click', function() {
+          $('#modal-pending').removeClass('hidden');
+        });
+
+        $('#modal-pending-close').on('click', function() {
+          $('#modal-pending').addClass('hidden');
+        });
+
+        $('#modal-pending').on('click', function(event) {
+            if (event.target === $('#modal-pending')[0]) {
+                $('#modal-pending').addClass('hidden');
+            }
+        });
+
+        $('#modal-bayar-button').on('click', function() {
+          $('#modal-bayar').removeClass('hidden');
+        });
+
+        $('#modal-bayar-close').on('click', function() {
+          $('#modal-bayar').addClass('hidden');
+        });
+
+        $('#modal-bayar').on('click', function(event) {
+            if (event.target === $('#modal-bayar')[0]) {
+                $('#modal-bayar').addClass('hidden');
+            }
+        });
+    });
+  </script>
+
 </body>
 </html>
